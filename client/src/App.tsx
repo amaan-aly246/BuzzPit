@@ -1,13 +1,11 @@
-import { useState } from 'react'
-
+import Navigation from './components/Navigation'
 import './index.css'
-
-function App() { 
+import MainPage from './pages/MainPage'
+function App() {
   return (
     <>
-<h1 class="text-3xl text-red-400  bg-amber-50 font-bold underline">
-    Hello world!
-  </h1>
+      <MainPage />
+      {/* <Navigation /> */}
     </>
   )
 }
