@@ -1,6 +1,6 @@
 import { pgTable, uuid, varchar } from "drizzle-orm/pg-core";
 
-export const usersTable = pgTable("users_table", {
+export const usersTable = pgTable("users", {
   id: uuid("id").primaryKey().defaultRandom(),
   firstName: varchar("first_name", { length: 255 }).default("FirstName"),
   lastName: varchar("last_name", { length: 255 }).default("LastName"),
